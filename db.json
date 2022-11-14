@@ -1,0 +1,53 @@
+{
+    "Dogs": [
+      {
+        "id": 1,
+        "name": "Raisin",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/White_Pitbull.jpg",
+        "breed": "pitbull",
+        "sex": "male"
+      },
+      {
+        "id": 2,
+        "name": "Mash",
+        "image": "https://media.istockphoto.com/id/158875499/photo/american-staffordshire-terrier-sitting-and-looking-at-camera.jpg?s=612x612&w=0&k=20&c=lwKlSF6Kx_myv9m-TfQn7F9Qxmr4L2nVdF-RZ6k6s4I=",
+        "breed": "pitbull",
+        "sex": "male"
+      },
+      {
+        "id": 3,
+        "name": "Brutus",
+        "image": "https://www.thegoodypet.com/wp-content/uploads/2022/02/German-Shepherd-Rottweiler-Mix-Your-Complete-Breed-Guide.jpeg",
+        "breed": "Rottweiler/ German-Shepherd",
+        "sex": "female"
+      },
+      {
+        "id": 4,
+        "name": "Doge",
+        "image": "https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "breed": "shiba-inu",
+        "sex": "female"
+      },
+      {
+        "id": 5,
+        "name": "Buddy aka 'Air Bud'",
+        "image": "https://images.pexels.com/photos/128817/pexels-photo-128817.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "breed": "golden retriever",
+        "sex": "male"
+      },
+      {
+        "id": 6,
+        "name": "luka Doncic",
+        "image": "https://images.pexels.com/photos/4681107/pexels-photo-4681107.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "breed": "Siberian Husky",
+        "sex": "female"
+      },
+      {
+        "id": 7,
+        "name": "Chuck Liddell",
+        "image": "https://images.pexels.com/photos/1139794/pexels-photo-1139794.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "breed": "Dachshund",
+        "sex": "male"
+      }
+    ]
+  }
