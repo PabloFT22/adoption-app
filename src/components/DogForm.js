@@ -20,6 +20,8 @@ function DogForm({dogs, setDogs}) {
             headers: {'content-type': 'application/json'}, 
             body:JSON.stringify(newDog)//where pablo and I left off(:
         })
+        .then (response => response.json())
+        .then (data => setDogs([...dogs, data]))
     }
 
 
@@ -27,10 +29,10 @@ function DogForm({dogs, setDogs}) {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input onCchange={e => {setNameInputValue(e.target.value)}} value={nameInputValue} placeHolder="name" type="text"/>
-                <input onCchange={e => {setImageInputValue(e.target.value)}} value={imageInputValue} placeHolder="image" type="text"/>
-                <input onCchange={e => {setBreedInputValue(e.target.value)}} value={breedInputValue} placeHolder="breed" type="text"/>
-                <input onCchange={e => {setSexInputValue(e.target.value)}} value={sexInputValue} placeHolder="sex" type="text"/>
+                <input onChange={e => {setNameInputValue(e.target.value)}} value={nameInputValue} placeHolder="name" type="text"/>
+                <input onChange={e => {setImageInputValue(e.target.value)}} value={imageInputValue} placeHolder="image" type="text"/>
+                <input onChange={e => {setBreedInputValue(e.target.value)}} value={breedInputValue} placeHolder="breed" type="text"/>
+                <input onChange={e => {setSexInputValue(e.target.value)}} value={sexInputValue} placeHolder="sex" type="text"/>
                 <button>Add Pup</button>
             </form>
         </div>
