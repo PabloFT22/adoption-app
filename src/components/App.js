@@ -32,8 +32,8 @@ const filteredArray = dogs.filter((eachDog)=>{
   return (
     <>
       <div className="top-page">
-        <h1> Let's Be Friends Fur-Ever!</h1>
-        <h3>Stop and Paw-nder The Meaning Of Life</h3>
+        <h1 style= {{position:"absolute; top:30px"}}> Let's Be Friends Fur-Ever!</h1>
+        <h3 className="subheader">Stop and Paw-nder The Meaning Of Life</h3>
         <Nav />
       </div>
       <Switch>
@@ -43,11 +43,13 @@ const filteredArray = dogs.filter((eachDog)=>{
           </Route>
          
           <Route path='/lostdog'>
+            
             <DogForm dogs={dogs} setDogs={setDogs}/>
           </Route>
           
           <Route path='/dogcontainer'>
             <DogSearch searchDogs={searchDogs} setSearchDogs={setSearchDogs}/>
+            <br/>
             <DogContainer dogs={filteredArray}/>
           </Route> 
           

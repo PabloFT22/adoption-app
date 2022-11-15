@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom"
 
 function Nav() {
     return (
-        <nav>
-            <NavLink exact to="/">About</NavLink>
-            <NavLink to="/dogcontainer">Adopt A Dog</NavLink>
-            <NavLink to="/lostdog">Found A Dog?</NavLink>
+        <nav id="nav">
+            <NavLink className="navBtn" exact to="/">About</NavLink>
+            <NavLink className="navBtn" to="/dogcontainer">Adopt A Dog</NavLink>
+            <NavLink className="navBtn" to="/lostdog">Found A Dog?</NavLink>
         </nav>
     );
 }

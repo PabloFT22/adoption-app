@@ -18,22 +18,32 @@ function DogForm({dogs, setDogs}) {
         fetch('http://localhost:8000/Dogs',{
             method: 'POST',
             headers: {'content-type': 'application/json'}, 
-            body:JSON.stringify(newDog)//where pablo and I left off(:
+            body:JSON.stringify(newDog)
         })
         .then (response => response.json())
         .then (data => setDogs([...dogs, data]))
+        
+        setNameInputValue('')
+        setImageInputValue('')
+        setBreedInputValue('')
+        setSexInputValue('')    //this clears the input field after submitting the form for a lost dog.
     }
 
 
     
     return (
         <div>
-            <form onSubmit={handleSubmit}>
-                <input onChange={e => {setNameInputValue(e.target.value)}} value={nameInputValue} placeholder="name" type="text"/>
-                <input onChange={e => {setImageInputValue(e.target.value)}} value={imageInputValue} placeholder="image" type="text"/>
-                <input onChange={e => {setBreedInputValue(e.target.value)}} value={breedInputValue} placeholder="breed" type="text"/>
-                <input onChange={e => {setSexInputValue(e.target.value)}} value={sexInputValue} placeholder="sex" type="text"/>
-                <button>Add Pup</button>
+            <h3 className="formDirection"> Report A Lost Dog</h3>
+            <form id="form" onSubmit={handleSubmit}>
+                <input className="formTxtArea" onChange={e => {setNameInputValue(e.target.value)}} value={nameInputValue} placeholder="name" type="text"/>
+                <br/>
+                <input className="formTxtArea" onChange={e => {setImageInputValue(e.target.value)}} value={imageInputValue} placeholder="image" type="text"/>
+                <br/>
+                <input className="formTxtArea" onChange={e => {setBreedInputValue(e.target.value)}} value={breedInputValue} placeholder="breed" type="text"/>
+                <br/>
+                <input className="formTxtArea" onChange={e => {setSexInputValue(e.target.value)}} value={sexInputValue} placeholder="sex" type="text"/>
+                <br/>
+                <button id="formBtn" >Add Pup</button>
             </form>
         </div>
     )
