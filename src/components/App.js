@@ -3,6 +3,8 @@ import DogContainer from './DogContainer';
 import DogForm from './DogForm';
 import DogSearch from './DogSearch';
 import About from './About';
+import {Switch, Route} from 'react-router-dom'
+import Nav from './Nav'
 
 function App() {
   const [dogs, setDogs] = useState([])
@@ -29,12 +31,31 @@ const filteredArray = dogs.filter((eachDog)=>{
 
   return (
     <>
-      <h1> hello!</h1>
-      <DogForm dogs={dogs} setDogs={setDogs}/>
-      <DogSearch searchDogs={searchDogs} setSearchDogs={setSearchDogs}/>
-      <DogContainer dogs={filteredArray}/>
-      
-      <About/>
+      <div className="top-page">
+        <h1> Let's Be Friends Fur-Ever!</h1>
+        <h3>Stop and Paw-nder The Meaning Of Life</h3>
+        <Nav />
+      </div>
+      <Switch>
+        
+          <Route exact path='/'>
+            <About/>
+          </Route>
+         
+          <Route path='/lostdog'>
+            <DogForm dogs={dogs} setDogs={setDogs}/>
+          </Route>
+          
+          <Route path='/dogcontainer'>
+            <DogSearch searchDogs={searchDogs} setSearchDogs={setSearchDogs}/>
+            <DogContainer dogs={filteredArray}/>
+          </Route> 
+          
+          <Route path='*'>
+            <h2>RickRolled</h2>
+          </Route>
+          
+      </Switch>
     </>
   );
 }

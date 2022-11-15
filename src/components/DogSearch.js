@@ -3,7 +3,7 @@ import React from 'react'
 function DogSearch({searchDogs, setSearchDogs}) {
     return(
         <>
-            <lable>Search for a pup</lable>
+            <h3>Search for a pup</h3>
             <br/>
             <input
             type="text"

@@ -6,7 +6,9 @@ function DogContainer({dogs}) {
 
     const dogList = dogs.map((dogObj) =>{
         return(
+            <>
             <DogCard key={dogObj.id} item={dogObj}/>
+            </>
         )
     })
 

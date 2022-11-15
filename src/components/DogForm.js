@@ -29,10 +29,10 @@ function DogForm({dogs, setDogs}) {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input onChange={e => {setNameInputValue(e.target.value)}} value={nameInputValue} placeHolder="name" type="text"/>
-                <input onChange={e => {setImageInputValue(e.target.value)}} value={imageInputValue} placeHolder="image" type="text"/>
-                <input onChange={e => {setBreedInputValue(e.target.value)}} value={breedInputValue} placeHolder="breed" type="text"/>
-                <input onChange={e => {setSexInputValue(e.target.value)}} value={sexInputValue} placeHolder="sex" type="text"/>
+                <input onChange={e => {setNameInputValue(e.target.value)}} value={nameInputValue} placeholder="name" type="text"/>
+                <input onChange={e => {setImageInputValue(e.target.value)}} value={imageInputValue} placeholder="image" type="text"/>
+                <input onChange={e => {setBreedInputValue(e.target.value)}} value={breedInputValue} placeholder="breed" type="text"/>
+                <input onChange={e => {setSexInputValue(e.target.value)}} value={sexInputValue} placeholder="sex" type="text"/>
                 <button>Add Pup</button>
             </form>
         </div>
