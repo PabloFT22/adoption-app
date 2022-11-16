@@ -3,7 +3,6 @@ import React from 'react'
 function DogCard({item,dogs,setDogs}) {
     
     const handleClick =() => {
-// UPDATE REQUEST
 
 fetch(`http://localhost:8000/Dogs/${item.id}`, {
   method: "PATCH",
@@ -15,10 +14,7 @@ fetch(`http://localhost:8000/Dogs/${item.id}`, {
         adopted: !item.adopted
     }),
   })
-    // .then(res => res.json())
-    // .then(data => console.log(data));
 
-// UPDATE THE DOG ARRAY WITH THE NEW UPDATED DOG
        let updatedDogArray = dogs.map(dog=>{
 
         if(item.id === dog.id){
@@ -29,8 +25,6 @@ fetch(`http://localhost:8000/Dogs/${item.id}`, {
 
        setDogs(updatedDogArray)
     }
-    // 
-
 
     return(
     <div className="dogCards">
@@ -42,7 +36,6 @@ fetch(`http://localhost:8000/Dogs/${item.id}`, {
         {/* need to link to search somehow pablo is the goat(;*/}
     </div>
     )
-
 }
 
 export default DogCard

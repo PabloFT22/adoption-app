@@ -11,7 +11,6 @@ function DogSearch({searchDogs, setSearchDogs}) {
             onChange= {(e) => setSearchDogs(e.target.value)}/>
         </div>
     )
-
 }
 
 export default DogSearch

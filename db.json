@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "adopted": false,
+      "adopted": true,
       "name": "Brutus",
       "image": "https://yourdogadvisor.com/wp-content/uploads/2021/10/1-a-german-shepherd-rottweiler-in-snow-682x1024.webp",
       "breed": "Rott/ G-Shepherd",
@@ -43,7 +43,7 @@
     {
       "id": 6,
       "adopted": false,
-      "name": "luka Doncic",
+      "name": "Luka Doncic",
       "image": "https://images.pexels.com/photos/4681107/pexels-photo-4681107.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "breed": "Siberian Husky",
       "sex": "female"
@@ -55,14 +55,6 @@
       "image": "https://images.pexels.com/photos/1139794/pexels-photo-1139794.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "breed": "Dachshund",
       "sex": "male"
-    },
-    {
-      "name": "Pablo",
-      "image": "https://img.freepik.com/free-photo/vertical-shot-adorable-wire-haired-dachshund-park_181624-37470.jpg",
-      "breed": "bolivian",
-      "sex": "male",
-      "id": 8,
-      "adopted": false
     }
   ]
 }

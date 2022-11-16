@@ -26,11 +26,9 @@ function DogForm({dogs, setDogs}) {
         setNameInputValue('')
         setImageInputValue('')
         setBreedInputValue('')
-        setSexInputValue('')    //this clears the input field after submitting the form for a lost dog.
+        setSexInputValue('')
     }
 
-
-    
     return (
         <div>
             <h3 className="formDirection"> Report A Lost Dog</h3>

@@ -16,8 +16,6 @@ function App() {
       setDogs(data);
     })
   },[]) 
-  
-  // console.log(dogs)
 
 const [searchDogs, setSearchDogs] = useState('')
 const filteredArray = dogs.filter((eachDog)=>{
@@ -27,43 +25,46 @@ const filteredArray = dogs.filter((eachDog)=>{
   )
 })
 
-
-
-
-
-
-
-
-
-
   return (
     <>
-      <div className="top-page">
-        <h1 style= {{position:"absolute; top:30px"}}> Let's Be Friends Fur-Ever!</h1>
-        <h3 className="subheader">Stop and Paw-nder The Meaning Of Life</h3>
-        <Nav />
-      </div>
       <Switch>
-        
           <Route exact path='/'>
-            <About/>
+            <div className="top-page">
+                <h1 style= {{position:"absolute; top:30px"}}> Let's Be Friends Fur-Ever!</h1>
+                <h3 className="subheader">Stop and Paw-nder The Meaning Of Life</h3>
+                <Nav />
+            </div>
+                <About/>
           </Route>
-         
           <Route path='/lostdog'>
-            
-            <DogForm dogs={dogs} setDogs={setDogs}/>
+              <div className="top-page">
+                <h1 style= {{position:"absolute; top:30px"}}> Let's Be Friends Fur-Ever!</h1>
+                <h3 className="subheader">Stop and Paw-nder The Meaning Of Life</h3>
+                <Nav />
+              </div>
+                <DogForm dogs={dogs} setDogs={setDogs}/>
           </Route>
-          
           <Route path='/dogcontainer'>
+            <div className="top-page">
+              <h1 style= {{position:"absolute; top:30px"}}> Let's Be Friends Fur-Ever!</h1>
+              <h3 className="subheader">Stop and Paw-nder The Meaning Of Life</h3>
+              <Nav />
+            </div>
             <DogSearch searchDogs={searchDogs} setSearchDogs={setSearchDogs}/>
             <br/>
             <DogContainer setDogs={setDogs}  dogs={filteredArray}/>
           </Route> 
-          
           <Route path='*'>
-            <h2>RickRolled</h2>
-          </Route>
-          
+            <iframe
+            className="rickRolled"
+            width="919"
+            height="525"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1"
+            frameBorder="0"
+            allowFullScreen
+            title="Get Rick-Rolled"
+            />
+          </Route>   
       </Switch>
     </>
   );
