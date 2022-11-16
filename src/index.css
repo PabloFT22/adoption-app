@@ -21,7 +21,9 @@ code {
   min-height: 300px;
   border-radius: 10px;
   background-color: black;
+  border-color: rgb(255, 255, 255);
   border-style: solid;
+  border-width: thick;
 }
 
 .top-page {
@@ -36,7 +38,7 @@ h1 {
   color: white;
   font-size: 100px;
   text-align: center;
-  border-style:outset;
+  /* border-style:outset; */
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -44,11 +46,14 @@ h1 {
   color: white;
   text-align: center;
   font-weight:bolder;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .navBtn {
   color: white;
   margin: 40px;
+  text-decoration: none;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #nav {
@@ -56,16 +61,22 @@ h1 {
 }
 
 .formTxtArea {
-  margin: 10px;
+  margin: 20px;
   width: 60%;
   height: 40px;
+  border-radius: 5px;
 
 }
 
 #formBtn {
-width: 20%;
-height: 30px;
-margin: 10px;
+background-color: #4CAF50; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
 }
 
 #form {
@@ -89,14 +100,51 @@ margin: 10px;
   justify-content: center;
 }
 
-#searchBar {
+.searchBar {
   width: 20%;
   height: 30px;
-  display: flex;
-  justify-content: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
-#DogSearch {
-  display: flex;
-  justify-content: center;
+#about-dog-pic {
+  max-width: 400px;
+  max-height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 90px;
 }
+
+.about {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 500px;
+  margin-right: 500px;
+  letter-spacing: 0.1em;
+}
+
+.venmo {
+text-align: center;
+}
+
+/* * {
+  border: 1px solid red;
+} */
+
+.dogCardButton {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 90px;
+}
+

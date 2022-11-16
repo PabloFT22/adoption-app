@@ -22,9 +22,16 @@ function App() {
 const [searchDogs, setSearchDogs] = useState('')
 const filteredArray = dogs.filter((eachDog)=>{
   return(
-    eachDog.name.toLowerCase().includes(searchDogs.toLowerCase())
+    eachDog.name.toLowerCase().includes(searchDogs.toLowerCase()) ||
+    eachDog.breed.toLowerCase().includes(searchDogs.toLowerCase())
   )
 })
+
+
+
+
+
+
 
 
 
@@ -50,7 +57,7 @@ const filteredArray = dogs.filter((eachDog)=>{
           <Route path='/dogcontainer'>
             <DogSearch searchDogs={searchDogs} setSearchDogs={setSearchDogs}/>
             <br/>
-            <DogContainer dogs={filteredArray}/>
+            <DogContainer setDogs={setDogs}  dogs={filteredArray}/>
           </Route> 
           
           <Route path='*'>

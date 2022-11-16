@@ -2,6 +2,7 @@
   "Dogs": [
     {
       "id": 1,
+      "adopted": true,
       "name": "Raisin",
       "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/White_Pitbull.jpg",
       "breed": "pitbull",
@@ -9,6 +10,7 @@
     },
     {
       "id": 2,
+      "adopted": true,
       "name": "Mash",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjs8sNMDeKZl9h6A6gUfJha5ve-0fEIOpbA&usqp=CAU",
       "breed": "pitbull",
@@ -16,6 +18,7 @@
     },
     {
       "id": 3,
+      "adopted": false,
       "name": "Brutus",
       "image": "https://yourdogadvisor.com/wp-content/uploads/2021/10/1-a-german-shepherd-rottweiler-in-snow-682x1024.webp",
       "breed": "Rott/ G-Shepherd",
@@ -23,6 +26,7 @@
     },
     {
       "id": 4,
+      "adopted": false,
       "name": "Doge",
       "image": "https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "breed": "shiba-inu",
@@ -30,6 +34,7 @@
     },
     {
       "id": 5,
+      "adopted": false,
       "name": "Buddy aka 'Air Bud'",
       "image": "https://image.posterlounge.com/images/l/1903529.jpg",
       "breed": "golden retriever",
@@ -37,6 +42,7 @@
     },
     {
       "id": 6,
+      "adopted": false,
       "name": "luka Doncic",
       "image": "https://images.pexels.com/photos/4681107/pexels-photo-4681107.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "breed": "Siberian Husky",
@@ -44,6 +50,7 @@
     },
     {
       "id": 7,
+      "adopted": false,
       "name": "Chuck Liddell",
       "image": "https://images.pexels.com/photos/1139794/pexels-photo-1139794.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "breed": "Dachshund",
@@ -54,7 +61,8 @@
       "image": "https://img.freepik.com/free-photo/vertical-shot-adorable-wire-haired-dachshund-park_181624-37470.jpg",
       "breed": "bolivian",
       "sex": "male",
-      "id": 8
+      "id": 8,
+      "adopted": false
     }
   ]
 }
