@@ -2,7 +2,7 @@
   "Dogs": [
     {
       "id": 1,
-      "adopted": true,
+      "adopted": false,
       "name": "Raisin",
       "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/White_Pitbull.jpg",
       "breed": "pitbull",
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "adopted": true,
+      "adopted": false,
       "name": "Mash",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrjs8sNMDeKZl9h6A6gUfJha5ve-0fEIOpbA&usqp=CAU",
       "breed": "pitbull",
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "adopted": true,
+      "adopted": false,
       "name": "Brutus",
       "image": "https://yourdogadvisor.com/wp-content/uploads/2021/10/1-a-german-shepherd-rottweiler-in-snow-682x1024.webp",
       "breed": "Rott/ G-Shepherd",

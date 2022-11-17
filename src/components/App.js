@@ -28,32 +28,36 @@ const filteredArray = dogs.filter((eachDog)=>{
   return (
     <>
       <Switch>
+          
           <Route exact path='/'>
             <div className="top-page">
                 <h1 style= {{position:"absolute; top:30px"}}> Let's Be Friends Fur-Ever!</h1>
                 <h3 className="subheader">Stop and Paw-nder The Meaning Of Life</h3>
-                <Nav />
-            </div>
+            </div><br/>
+            <Nav />
                 <About/>
           </Route>
+          
           <Route path='/lostdog'>
               <div className="top-page">
                 <h1 style= {{position:"absolute; top:30px"}}> Let's Be Friends Fur-Ever!</h1>
                 <h3 className="subheader">Stop and Paw-nder The Meaning Of Life</h3>
+              </div><br/>
                 <Nav />
-              </div>
                 <DogForm dogs={dogs} setDogs={setDogs}/>
           </Route>
+          
           <Route path='/dogcontainer'>
             <div className="top-page">
               <h1 style= {{position:"absolute; top:30px"}}> Let's Be Friends Fur-Ever!</h1>
               <h3 className="subheader">Stop and Paw-nder The Meaning Of Life</h3>
+            </div><br/>
               <Nav />
-            </div>
             <DogSearch searchDogs={searchDogs} setSearchDogs={setSearchDogs}/>
             <br/>
             <DogContainer setDogs={setDogs}  dogs={filteredArray}/>
           </Route> 
+          
           <Route path='*'>
             <iframe
             className="rickRolled"
@@ -65,6 +69,7 @@ const filteredArray = dogs.filter((eachDog)=>{
             title="Get Rick-Rolled"
             />
           </Route>   
+      
       </Switch>
     </>
   );
