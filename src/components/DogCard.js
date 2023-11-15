@@ -4,7 +4,7 @@ function DogCard({item,dogs,setDogs}) {
     
     const handleClick =() => {
 
-fetch(`http://localhost:8000/Dogs/${item.id}`, {
+fetch(`http://localhost:8001/Dogs/${item.id}`, {
   method: "PATCH",
     headers: {
       "Content-Type": "application/json",
@@ -33,7 +33,6 @@ fetch(`http://localhost:8000/Dogs/${item.id}`, {
         <p>Breed: {item.breed}</p>
         <p>Sex: {item.sex}</p>
         <button className="dogCardButton" onClick={handleClick}>{item.adopted ? "Already Adopted" : "Adopt"}</button>
-        {/* need to link to search somehow pablo is the goat(;*/}
     </div>
     )
 }

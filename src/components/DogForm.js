@@ -15,7 +15,7 @@ function DogForm({dogs, setDogs}) {
             breed: breedInputValue,
             sex: sexInputValue
         }
-        fetch('http://localhost:8000/Dogs',{
+        fetch('http://localhost:8001/Dogs',{
             method: 'POST',
             headers: {'content-type': 'application/json'}, 
             body:JSON.stringify(newDog)

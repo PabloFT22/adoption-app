@@ -10,7 +10,7 @@ function App() {
   const [dogs, setDogs] = useState([])
   
   useEffect(() => {
-    fetch('http://localhost:8000/Dogs')
+    fetch('http://localhost:8001/Dogs')
     .then((res) => (res.json()))
     .then(data => {
       setDogs(data);
